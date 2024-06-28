@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>Hebrew Simplifier</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: #f7f7f7;
+      direction: rtl;
+    }
+    #container {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 400px; /* Increased width */
+    }
+    p {
+      margin: 10px 0;
+      font-size: 18px; /* Increased font size */
+    }
+    #word {
+      font-weight: bold;
+      color: #333333;
+    }
+    #simplified-word {
+      white-space: pre-line;
+      color: #555555;
+    }
+    .bold-word {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <p>מילה מקורית: <span id="word"></span></p>
+    <p>מילה פשוטה:<br><span id="simplified-word"></span></p> <!-- Added line break -->
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
